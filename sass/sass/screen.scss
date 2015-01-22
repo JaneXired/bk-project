@@ -1,0 +1,245 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+// FONTFACE
+
+@font-face {
+	font-family: Parisienne;
+	src: url(../../fonts/Parisienne/Parisienne-Regular.ttf);
+}
+
+@font-face {
+	font-family: Lato Light;
+	font-weight: 300;
+	src: url(../../fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+	font-family: Lato Normal;
+	font-weight: 400;
+	src: url(../../fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+	font-family: Lato Bold;
+	font-weight: 700;
+	src: url(../../fonts/Lato/Lato-Bold.ttf);
+}
+
+// COLOR-VAR
+$white       : #FFFFFF;
+$oil         : #333333;
+$erculeoSpecial : #542222;
+$hr-grey        : #B0B0B0;
+
+
+// COMMON
+* {
+	margin: 0;
+	padding: 0;
+}
+
+// HEADLINES
+
+h1, h2, h3, h4, p, a, span, strong {
+	color: $oil;
+
+	&.specialColor {
+		color: $erculeoSpecial;
+	}
+}
+
+h1 {
+	font-size: 40px;
+	font-family: Parisienne;
+}
+
+h2 {
+	font-size: 18px;
+	font-family: Lato Normal;
+}
+
+h3 {
+	font-size: 16px;
+	font-family: Lato Normal;
+}
+
+h4 {
+	font-size: 14px;
+	font-family: Lato Normal;
+}
+
+p {
+	line-height: 18px;
+	font-size: 14px;
+	font-family: Lato Normal;
+}
+
+a {
+	font-family: Lato Normal;
+	text-decoration: none;
+}
+
+span {
+	line-height: 20px;
+	font-family: Lato Normal;
+}
+
+strong {
+	line-height: 20px;
+	font-family: Lato Bold;
+}
+
+hr {
+	border-color: $hr-grey;
+	margin: 50px 0;
+}
+
+body {
+	background: url("../../img/bg.jpg") no-repeat;
+	background-attachment: fixed;
+}
+
+.wrapper {
+	background-color: rgba($white, 0.8);
+	min-height: 100%;
+	padding: 20px 80px 100px 80px;
+	width: 814px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0px;
+}
+
+.clear {
+	clear: both;
+}
+
+header {
+	position: relative;
+	z-index: 5;
+
+	a {
+		h2.specialColor {
+			text-align: center;
+			line-height: 16px;
+		}
+
+		.logo {
+			display: block;
+			margin: 0 auto;
+			padding: 20px 20px 0 20px;
+		}
+	}
+
+	//// NAVIGATION
+
+	nav {
+		background-color: $erculeoSpecial;
+		width: 814px;
+		height: 45px;
+
+		ul {
+			margin-top: 20px;
+			padding-top: 15px;
+
+			li {
+				display: inline;
+
+				a {
+					color: $white;
+					padding: 40px;
+
+					&:hover {
+						color: $white;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		&.scroll {
+			top: 0;
+			position: fixed;
+			margin-bottom: 70px;
+
+			ul {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+section {
+
+	&#news {
+		margin-top: 50px;
+
+		&.topSpaceScroll {
+			margin-top: 130px;
+			display: inline-block;
+		}
+
+		.left {
+			width: 50%;
+			float: left;
+			padding-right: 7%;
+		}
+	}
+
+	&#empfehlungen {
+		margin-top: 50px;
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		.left {
+			width: 50%;
+			float: left;
+			padding-right: 7%;
+		}
+
+		.right {
+			height: 100%;
+			display: -webkit-box;
+
+		}
+	}
+
+	&#spezialitaeten {
+		dl {
+			display: inline-block;
+			margin-top: 15px;
+
+			dt {
+				margin-bottom: 10px;
+			}
+
+			.leftTxt {
+				width: 80%;
+				float: left;
+				padding-right: 7%;
+				margin-top: 10px;
+			}
+
+			.rightCosts {
+				float: right;
+			}
+
+			.disappear {
+				span {
+					color: transparent !important;
+				}
+			}
+		}
+	}
+}

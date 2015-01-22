@@ -1,0 +1,484 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ristorante Erculeo</title>
+    <link rel="stylesheet" href="sass/stylesheets/screen.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+	<script type="text/javascript" src="js/bower_components/jquery/dist/jquery.min.js"></script>
+
+	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+		-->
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <a href="#start">
+                <img class="logo" src="img/logo.png" alt="Erculeo Logo Schriftzug">
+                <h2 class="specialColor">
+                    Die klassisch <br>
+                    italienische Küche
+                </h2>
+            </a>
+
+            <nav id="navigation">
+                <ul>
+                    <li>
+                        <a href="#start" id="startMenu">Start</a>
+                    </li>
+                    <li>
+                        <a href="#restaurant">Restaurant</a>
+                    </li>
+                    <li>
+                        <a href="#spezialitaeten" id="specialMenu">Spezialitäten</a>
+                    </li>
+                    <li>
+                        <a href="#reservierung">Reservierung</a>
+                    </li>
+                    <li>
+                        <a href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="start">
+            <section id="news" class="clearfix">
+                <div class="left">
+                    <h1>News</h1>
+                    <h2>Die Renovierung ist abgeschlossen!</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                        kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="right">
+                    <img class="imgRight" src="img/nudeln.jpg" alt="Verschiedene Nudelsorten auf einem Tisch">
+                </div>
+            </section>
+
+            <section id="empfehlungen">
+                <h2>Unsere Tagesempfehlungen</h2>
+
+                <div class="left">
+                    <img class="imgLeft" src="img/salami.jpg" alt="Verschiedene Salamisorten auf einem Tisch">
+
+                </div>
+                <div class="right">
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                        kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>            </div>
+            </section>
+        </div>
+
+        <hr>
+
+        <section id="spezialitaeten">
+            <h1>Spezialitäten</h1>
+
+            <dl>
+                <!--VORSPEISEN-->
+                <dt>
+                    <h2>Antipasti/Vorspeisen</h2>
+                </dt>
+                <dd class="leftTxt">
+                    <span>
+                        Grigliata mozzarella <br>
+                        gegrillter Mozzarella mit Parmaschinken, Rucola und Tomaten
+                    </span>
+                </dd>
+                <dd class="rightCosts">
+                    <span>
+                        6,50 EUR
+                    </span>
+                </dd>
+
+                <dd class="leftTxt">
+                    <span>
+                        Gamberetti al forno <br>
+						Garnelenschwänze mit Peperoni in Olivenöl, im Ofen gebacken
+                    </span>
+                </dd>
+                <dd class="rightCosts">
+                    <span>
+                        8,60 EUR
+                    </span>
+                </dd>
+
+                <dd class="leftTxt">
+                    <span>
+                       Vitello tonnato <br>
+						Kalbfleischscheiben mit Thunfischsauce und Kapern
+                    </span>
+                </dd>
+                <dd class="rightCosts">
+                    <span>
+                        9,90 EUR
+                    </span>
+                </dd>
+
+                <dd class="leftTxt">
+                    <span>
+                       Carpaccio di manzo<br>
+                       rohe, hauchdünne Rindfleischscheiben mit feinenSteinpilzen,<br>
+                       gehobeltem Parmesan und Olivenöl
+                    </span>
+                </dd>
+                <dd class="rightCosts">
+                    <span>
+                        9,90 EUR
+                    </span>
+                </dd>
+            </dl>
+
+            <hr class="clear">
+
+            <dl>
+                <!--SUPPEN-->
+                <dt>
+                    <h2>Zuppe/Suppe</h2>
+                </dt>
+
+                <dd class="leftTxt">
+                    <span>
+                       Zuppa di pesce Sorento <br>
+						Fischsuppe mit Lachs, Zander, Shrimps und Muscheln
+                    </span>
+                </dd>
+                <dd class="rightCosts">
+                    <span>
+                       5,90 EUR
+                    </span>
+                </dd>
+
+	            <dd class="leftTxt disappear">
+                    <span>
+                       Zuppa di pesce Sorento <br>
+						Fischsuppe mit Lachs, Zander, Shrimps und Muscheln
+                    </span>
+	            </dd>
+	            <dd class="rightCosts disappear">
+                    <span>
+                       5,90 EUR
+                    </span>
+	            </dd>
+            </dl>
+
+            <hr class="clear">
+
+            <dl>
+                <!--SALAT-->
+                <dt>
+                    <h2>Insalate/Salate</h2>
+                </dt>
+
+                <dd class="leftTxt">
+                    <span>
+                       Insalata Erculeo <br>
+                       gemischte Blattsalate mit Hähnchenbrust vom Grill, frischen Früchten und<br>
+                       Pinienkernen, Balsamicodressing
+                    </span>
+                </dd>
+                <dd class="rightCosts">
+                    <span>
+                      9,50 EUR
+                    </span>
+                </dd>
+
+                <dd class="leftTxt">
+                    <span>
+                       Insalata con pesce grigliato <br>
+						marinierte Blattsalate mit Streifen von gegrilltem Fisch, Balsamicodressing
+                    </span>
+                </dd>
+                <dd class="rightCosts">
+                    <span>
+                      9,90 EUR
+                    </span>
+                </dd>
+            </dl>
+
+	        <hr class="clear">
+
+	        <dl>
+		        <!--PASTA-->
+		        <dt>
+		            <h2>Pasta/Nudeln</h2>
+		        </dt>
+
+		        <dd class="leftTxt">
+                    <span>
+                       Penne con verdure e ricotta <br>
+						Penne mit frischen Zucchini, Champignons, Auberginen, Paprika,<br>
+						Tomaten und Ricottakäse
+                    </span>
+		        </dd>
+		        <dd class="rightCosts">
+                    <span>
+                     8,80 EUR
+                    </span>
+		        </dd>
+
+		        <dd class="leftTxt">
+                    <span>
+                       Fettuccine al pepe con vitello <br>
+						Pfeffernudeln mit Kalbsrückenstreifen und frischen Tomaten
+                    </span>
+		        </dd>
+		        <dd class="rightCosts">
+                    <span>
+                     9,90 EUR
+                    </span>
+		        </dd>
+
+		        <dd class="leftTxt">
+                    <span>
+                       Fettucchine al salmone con asparagi <br>
+						Bandnudeln mit Lachs und grünem Spargel in Orangenrahmsauce
+                    </span>
+		        </dd>
+		        <dd class="rightCosts">
+                    <span>
+                     9,50 EUR
+                    </span>
+		        </dd>
+
+		        <dd class="leftTxt">
+                    <span>
+                       Ravioli neri salmone <br>
+						Schwarze Lachsravioli mit Limonensauce und Shrimps
+                    </span>
+		        </dd>
+		        <dd class="rightCosts">
+                    <span>
+                     9,20 EUR
+                    </span>
+		        </dd>
+
+		        <dd class="leftTxt">
+                    <span>
+                       Risotto con verdure <br>
+						Risotto mit frischen Zucchini, Champignons, Auberginen, Paprika, Frühlingslauch <br>
+						und Tomaten
+                    </span>
+		        </dd>
+		        <dd class="rightCosts">
+                    <span>
+                     8,50 EUR
+                    </span>
+		        </dd>
+		    </dl>
+
+            <hr class="clear">
+
+            <dl>
+	            <!--FISCH-->
+	            <dt>
+	                 <h2>Pesce/Fisch</h2>
+	            </dt>
+
+	            <dd class="leftTxt">
+                    <span>
+                       Trota alla griglia <br>
+						Forelle vom Grill mit Kapern-Tomaten-Butter, gebackenen Rosmarinkartoffeln
+                    </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+                     14,80 EUR
+                    </span>
+	            </dd>
+
+	            <dd class="leftTxt">
+                    <span>
+                       Salmerino alla griglia <br>
+						Saiblingsfilet vom Grill mit Zitronen-Butter, Broccoli und Olivenrisotto
+                    </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+                     15,80 EUR
+                    </span>
+	            </dd>
+
+	            <dd class="leftTxt">
+                    <span>
+                       Lurcioperca alla griglia <br>
+						Zanderfilet vom Grill mit schwarzen Spaghettini, Kräutersauce und Broccoli
+                    </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+                     15,60 EUR
+                    </span>
+	            </dd>
+	        </dl>
+
+            <hr class="clear">
+
+            <dl>
+	            <!--FLEISCH-->
+	            <dt>
+	                <h2>Carne/Fleisch</h2>
+	            </dt>
+
+	            <dd class="leftTxt">
+                    <span>
+                       Scaloppina alla valdostana  <br>
+						Schweine-Medaillons mit Tomaten, Schinken und Mozzarella überbacken, <br>
+						dazu Bandnudeln
+                    </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+                     9,50 EUR
+                    </span>
+	            </dd>
+
+	            <dd class="leftTxt">
+                    <span>
+                       Saltimbocca alla romana <br>
+						Kalbsschnitzel mit Parmaschinken, Salbeiblatt und Saisongemüse
+                    </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+                     16,50 EUR
+                    </span>
+	            </dd>
+
+	            <dd class="leftTxt">
+                    <span>
+                       Filetto gorgonzola  <br>
+						Rinderfiletsteak mit Gorgonzolasauce, eine Beilage nach Wunsch
+                    </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+                     15,20 EUR
+                    </span>
+	            </dd>
+	        </dl>
+
+            <hr class="clear">
+
+            <dl>
+	            <!--Beilagen-->
+	            <dt>
+	                <h2>Beilagen</h2>
+	            </dt>
+
+	            <dd class="leftTxt">
+                    <span>
+                      Nudeln, Reis, Rosmarinkartoffeln, Bratkartoffeln, Gemüse der Saison, Salat der Saison, Pizzabrot
+                    </span>
+	            </dd>
+	        </dl>
+
+            <hr class="clear">
+
+            <dl>
+	            <!--DESSERT-->
+	            <dt>
+	                <h2>Dolci/Dessert</h2>
+	            </dt>
+
+	            <dd class="leftTxt">
+                    <span>
+						Cassata <br>
+						Typische italienische Eisspezialität mit kandierten Früchten
+	                 </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+                     3,80 EUR
+                    </span>
+	            </dd>
+
+	            <dd class="leftTxt">
+                    <span>
+						Panna Cotta <br>
+						Sahnepudding mit Erdbeermark
+	                 </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+                     4,90 EUR
+                    </span>
+	            </dd>
+
+	            <dd class="leftTxt">
+                    <span>
+						Tartufo <br>
+						Schokoladeneis mit weißem Kern
+	                 </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+                     4,50 EUR
+                    </span>
+	            </dd>
+            </dl>
+
+            <hr class="clear">
+
+            <dl>
+	            <!--WEIN-->
+	            <dt>
+	                <h2>Weinempfehlung</h2>
+	            </dt>
+
+	            <dd class="leftTxt">
+                    <span>
+						Gavi di Gavi <br>
+						Terre dei Roveri DOCG 2010 <br>
+						weiß – trocken, fruchtig und aromatisch, <br>
+						ein wenig herb mit einer Zitronennuance
+	                 </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+						0,25L / 4,10 EUR
+                    </span>
+	            </dd>
+
+	            <dd class="leftTxt">
+                    <span>
+						Barolo <br>
+						Terre dei Roveri DOCG 2007<br>
+						rot – trocken, duftet nach Pflaumen, dunklen Beeren<br>
+						und Süßholz, kräftige Fruchtaromen, samtiges Tannin
+	                 </span>
+	            </dd>
+	            <dd class="rightCosts">
+                    <span>
+						0,25L / 6,20 EUR
+                    </span>
+	            </dd>
+	        </dl>
+            <strong>Beachten Sie bitte auch unsere Tagesempfehlungen.</strong>
+
+        </section>
+
+    </div>
+
+    <script type="text/javascript" src="js/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
