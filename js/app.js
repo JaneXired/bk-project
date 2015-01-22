@@ -1,8 +1,7 @@
 var offset = 133,// header offset zur navigation in px
     topPos,
     windowTop,
-    startMenu = $('body').find('#startMenu');
-
+    navHeight = $('body').find('#navigation').height() + 10;   // höhe des navigationscontainers + 10px margin
 
 $(window).scroll(function (){
 
@@ -21,6 +20,10 @@ $(window).scroll(function (){
 
 });
 
-$(window).click(startMenu , function() {       // scroll top mit offset on click
-    $(window).scrollTop(offset);
+$('a[href^=#]').on('click', function(e){
+    var href = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop:$(href).offset().top - navHeight     // zum Element springen und 10px hochfahren weil wegen fixed header
+    },'fast');
+    e.preventDefault();
 });
